@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DellRave</title>
+  <script src="js/google-analytics-bundle.js"></script>
+  <link rel="stylesheet" href="js/jquery/jquery-ui.structure.css">
+  <script src="js/globalize.js"></script>
+  <script src="js/jquery/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/dell.led.js"></script>
+  <script src="svgtopng.js"></script>
+  <script src="js/analytics.js"></script>
+</head>  
+<body>
+  <div class="colors" mode="normal" icons>
+    <input name="red" type="checkbox" class="led-red">
+    <input name="yellow" type="checkbox" class="led-yellow">
+    <input name="green" type="checkbox" class="led-green">
+    <input name="cyan" type="checkbox" class="led-cyan">
+    <input name="blue" type="checkbox" class="led-blue">
+    <input name="magenta" type="checkbox" class="led-magenta">
+    <input name="white" type="checkbox" class="led-white">
+    <!--<input name="rainbow" type="checkbox" class="rainbow">-->
+  </div>
+    
+  <div class='tabs'>
+    <div class="winBtn winClose"></div>
+    <div class="winBtn winMinimize"></div>
+    <div class="app-version">0.0.0</div>
+    <ul>
+      <li><a href='#tab-modes'>Modes</a></li>
+      <li><a href='#tab-custom'>Custom</a></li>
+      <li><a href='#tab-settings'>Setup</a></li>
+    </ul>
+    <div id='tab-modes'>
+      <ul class='btn-set led-modes'>
+        <li id='set-normal' class='button-on'>Normal</li>
+        <li id='set-blink'>Blink</li>
+        <li id='set-custom'>Custom</li>
+      </ul>
+      <div class='speed-slider'></div>
+      <img class='led-indicator'>
+    </div>
+    <div id='tab-custom'>
+        <ul color='' class='btn-choice'>
+          <li class='btn red'></li>
+          <li class='btn yellow'></li>
+          <li class='btn green'></li>
+          <li class='btn cyan'></li>
+          <li class='btn blue'></li>
+          <li class='btn magenta'></li>
+          <li class='btn white'></li>
+          <input readonly class='btn interval' type='spinner'></input>
+          <li class='remove'></li>
+        </ul>
+        <button></button>
+    </div>
+    <div id='tab-settings'>
+      <center>Coming Soon</center>
+    </div>
+  </div>
+  <script charset="UTF-8" src="main.js"></script>
+</body>
+</html>
