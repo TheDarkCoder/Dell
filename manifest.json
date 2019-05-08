@@ -1,0 +1,30 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "author": "Mikal Taliferro",
+   "description": "Control the LED Light for the Dell Chromebook 9! Choose Your Own Light Pattern!",
+   "icons": {
+      "128": "assets/cyan_icon_128.png",
+      "16": "assets/cyan_icon_16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs696VClRZQ0kMPHU3Li2k4w2Cs8WbArwugEZMK3cJTpkLOredUQjgC2EuCAStIDNF35V/W1fzdNHKG7CU0VNHKixAje99DK3bW4HT8BxGDTQnTDIhD+uuutfjLL6KhQ4XIlfclAQgGBAvLaziGsNPTZmArZ/5bpvIWT4vJ9Y8htBYXYu2im9vkPBrnctQoeSB/4IPexRtbKIAJoUh7rEuDB0dSspRLhbrhPSwmLhFh3XWpPv/6wcoIvvr62xnwfxpRfQejLDghSVufH6WoNvIcE9dG6K3hg60OwAEQwLZCjWAf/re63oEcU18j0dW3NYZ6mQjZSfrY+miPp0mDcOFQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "38",
+   "name": "DellRave",
+   "offline_enabled": true,
+   "permissions": [ "https://www.google-analytics.com/", "storage", "hid", {
+      "usbDevices": [ {
+         "productId": 2856,
+         "vendorId": 1240
+      }, {
+         "productId": 2856,
+         "vendorId": 1240
+      } ]
+   } ],
+   "short_name": "DellRave",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.7"
+}
